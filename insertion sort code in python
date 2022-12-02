@@ -1,0 +1,16 @@
+def insertionSort(arr):
+
+	
+	for i in range(1, len(arr)):
+
+		key = arr[i]
+		j = i-1
+		while j >=0 and key < arr[j] :
+				arr[j+1] = arr[j]
+				j -= 1
+		arr[j+1] = key
+
+
+arr = [11,54,8,2,664,9875,964,21874,324169,14,54,987451,221,121,54,32396,63749,41774]
+insertionSort(arr)
+print(arr)
